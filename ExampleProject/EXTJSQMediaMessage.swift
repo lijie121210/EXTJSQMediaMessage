@@ -1,6 +1,5 @@
 //
 //  EXTJSQMediaMessage.swift
-//  SmartHome_Flat
 //
 //  Created by Lijie on 15/12/14.
 //  Copyright © 2015年 HuatengIOT. All rights reserved.

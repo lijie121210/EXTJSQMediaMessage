@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'ExampleProject' do
+
+pod 'JSQMessagesViewController'
+pod 'JSQSystemSoundPlayer', '~> 2.0'
+
+# to show image detail
+pod 'VIPhotoView', '~> 0.1'
+
+end
+
+target 'ExampleProjectTests' do
+
+end
+
+target 'ExampleProjectUITests' do
+
+end
+

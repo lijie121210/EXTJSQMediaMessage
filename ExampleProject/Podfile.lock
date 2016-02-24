@@ -1,0 +1,17 @@
+PODS:
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - VIPhotoView (0.1)
+
+DEPENDENCIES:
+  - JSQMessagesViewController
+  - JSQSystemSoundPlayer (~> 2.0)
+  - VIPhotoView (~> 0.1)
+
+SPEC CHECKSUMS:
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  VIPhotoView: bdc0cf8ddadda754b451869bd3a919e8eb5c11ab
+
+COCOAPODS: 0.38.2

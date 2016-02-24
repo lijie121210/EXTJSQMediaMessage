@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E8Z-Nd-He0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Horizon-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChatViewController" customModule="ExampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event Horizon" id="9n1-uX-H9E">
+                        <barButtonItem key="leftBarButtonItem" image="me" id="lW0-rZ-niD"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="QKc-qz-ZG2" kind="presentation" identifier="Photo Skim Segue" id="0ad-UY-CDU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="999"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s3G-ep-MFf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E8Z-Nd-He0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2uZ-t1-lfb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dEz-LU-NPX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGb-Sg-2N0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="999"/>
+        </scene>
+        <!--Photo Skim View Controller-->
+        <scene sceneID="HiN-sX-oFg">
+            <objects>
+                <viewController id="QKc-qz-ZG2" customClass="PhotoSkimViewController" customModule="ExampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ug3-ah-YK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="I3I-Rk-Rln"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bg0-1n-smf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WZ-yh-xDG">
+                                <rect key="frame" x="548" y="28" width="32" height="32"/>
+                                <state key="normal" backgroundImage="dismiss"/>
+                                <connections>
+                                    <segue destination="NKC-EG-58B" kind="unwind" unwindAction="close:" id="TBS-2C-OoT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1WZ-yh-xDG" secondAttribute="trailing" id="fMA-CX-qzb"/>
+                            <constraint firstItem="1WZ-yh-xDG" firstAttribute="top" secondItem="Ug3-ah-YK7" secondAttribute="bottom" constant="8" id="flN-qk-sX5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="1WZ-yh-xDG" id="NJU-Cg-KUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UU-eU-Amv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NKC-EG-58B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dismiss" width="32" height="32"/>
+        <image name="me" width="20" height="20"/>
+    </resources>
+</document>
